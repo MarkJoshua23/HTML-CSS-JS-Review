@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Montserrat'; /* Font name to use in CSS */
+    src: url('./fonts/Montserrat-Bold.ttf') format('truetype'); /* URL to the font file */
+    font-weight: bold; /* Specify font weight if applicable */
+    font-style: normal; /* Specify font style if applicable */
+  }
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+.container{
+    padding: 10px 10%;
+    
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}

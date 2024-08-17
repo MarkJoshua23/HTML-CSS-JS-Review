@@ -1,0 +1,20 @@
+#portfolio{
+    padding: 50px 0;
+}
+/* ----grid to be responsive, theres a min 250 since the image will get smaller the more images it contains and when they reach 250 it will wrap----- */
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+}
+/* ---hidden para mahide pag lumagpas-- */
+.work {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+

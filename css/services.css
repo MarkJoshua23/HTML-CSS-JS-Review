@@ -1,0 +1,37 @@
+#services{
+    padding: 30px 0
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300px;
+    border-radius: 25px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+/* --------inline block means pede maging horizontal like flex but manual configurations of margin,height, width; so wala space evenly------ */
+.services-list div a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 13px;
+    margin-top: 20px;
+    display: inline-block;
+}
+/* -----------------------------------nataas transitiion */
+.services-list div:hover{
+    background-color: #ff004f;         
+    transform: translateY(-10px);
+}

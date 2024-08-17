@@ -1,0 +1,41 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* ----logo and ul are the child sharing the space-------- */
+.logo{
+    width: 140px;
+}
+
+nav ul{
+    display: flex;
+    justify-content:start; 
+    flex-wrap: wrap;
+}
+/* -----all li will then share the space provided to ul by nav---------  */
+nav ul li{
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+/* -------------underline---------- */
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+     width: 100%;
+}
