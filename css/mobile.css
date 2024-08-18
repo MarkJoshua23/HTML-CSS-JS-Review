@@ -1,0 +1,66 @@
+/* -------for mobile devices----- */
+/* -----if not appearing, always put new state below to ensure theres no conflict--------- */
+i.mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 800px){
+    #header{
+        background-image: url(../images/mobile.png);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    i.mobile{
+        display: block;
+        font-size: 18px;
+        fill: white;
+    }
+    /* -------set the flex of nav ul to inline-block because flex messes up line spacing----- */
+    /* ---------sidebar-------------- */
+    /* -------we set right to -200px to hide the side bar when not needed------- */
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        display: inline-block;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+
+    }
+    /* -----to put close icon to top-------- */
+    nav ul i.mobile{
+        position: absolute;
+        top: 25px;
+        left: 17px;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    /* ------flex basis 100% so they can occupy 100 percent of width---------- */
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+}

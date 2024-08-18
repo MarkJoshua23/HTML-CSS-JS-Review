@@ -6,7 +6,8 @@ nav{
 }
 /* ----logo and ul are the child sharing the space-------- */
 .logo{
-    width: 140px;
+
+    height: 100px;
 }
 
 nav ul{
@@ -26,6 +27,7 @@ nav ul li a{
     position: relative;
 }
 /* -------------underline---------- */
+/* ------remember to put transition when using hover------ */
 nav ul li a::after{
     content: '';
     width: 0%;

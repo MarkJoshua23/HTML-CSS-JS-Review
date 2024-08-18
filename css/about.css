@@ -3,12 +3,10 @@
     color: #ababab;
 }
 
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 
+/* ----flex basis what percentage of space it will occupy------ */
+/* ------remember the parent should be display:flex----- */
+/* -------row the parent is in main.css-------- */
 .about-col-1{
     flex-basis: 35%;
     border: 20px ;
@@ -16,11 +14,12 @@
 .about-col-1 img{
     width: 100%;
 }
+/* -------there will be 5% leftover whichh will go to the space between them----- */
 .about-col-2{
     flex-basis: 60%;
     margin-top: 40px;
 }
-
+/* -------use flex on divs----------- */
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
@@ -43,6 +42,7 @@
     bottom: -8px;
     transition: 0.5s;
 }
+/* ----show underline only to tablinks with activelink class--- */
 .tab-links.active-link::after{
      width: 50%;
 }
@@ -60,7 +60,7 @@
 .tab-contents{
     display: none;
 }
-
+/* ----show the content of tab that has active tab class--- */
 .tab-contents.active-tab{
     display: block;
 }
